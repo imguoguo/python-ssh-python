@@ -4,7 +4,7 @@
 
 Name:           python-%{modname}
 Version:        0.9.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bindings for libssh C library
 
 License:        LGPLv2+
@@ -92,5 +92,8 @@ Summary:        %{summary} documentation
 %doc examples/ _build/html/
 
 %changelog
+* Fri Jan 21 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
+
 * Wed Dec 8 2021 James Slagle <jslagle@redhat.com> - 0.9.0-1
 - Initial package
