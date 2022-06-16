@@ -3,7 +3,7 @@
 %global modname ssh-python
 
 Name:           python-%{modname}
-Version:        0.9.0
+Version:        0.10.0
 Release:        3%{?dist}
 Summary:        Bindings for libssh C library
 
@@ -92,6 +92,9 @@ Summary:        %{summary} documentation
 %doc examples/ _build/html/
 
 %changelog
+* Thu Jun 16 2022 James Slagle <jslagle@redhat> - 0.10.0-1
+- Update to 0.10.0
+
 * Mon Jun 13 2022 Python Maint <python-maint@redhat.com> - 0.9.0-3
 - Rebuilt for Python 3.11
 
