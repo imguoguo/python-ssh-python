@@ -4,7 +4,7 @@
 
 Name:           python-%{modname}
 Version:        0.10.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Bindings for libssh C library
 
 License:        LGPLv2+
@@ -92,6 +92,9 @@ Summary:        %{summary} documentation
 %doc examples/ _build/html/
 
 %changelog
+* Thu Jun 16 2022 Python Maint <python-maint@redhat.com> - 0.10.0-4
+- Rebuilt for Python 3.11
+
 * Thu Jun 16 2022 James Slagle <jslagle@redhat> - 0.10.0-1
 - Update to 0.10.0
 
