@@ -1,0 +1,21 @@
+commit 5e67d0dfc8a7cf58a61c4e3135e62e1f95db6b64
+Author: Federico Pellegrin <fede@evolware.org>
+Date:   Tue Apr 18 05:21:08 2023 +0200
+
+versioneer: replace deprecated (and removed in 3.12) SafeConfigParser
+    
+See for details: https://github.com/python/cpython/pull/92503/files
+
+Upstream: https://github.com/ParallelSSH/ssh-python/pull/71
+diff -ruN a/versioneer.py b/versioneer.py
+--- a/versioneer.py	2022-12-03 21:54:08.000000000 +0100
++++ b/versioneer.py	2023-04-17 11:43:10.318948751 +0200
+@@ -339,7 +339,7 @@
+     # configparser.NoOptionError (if it lacks "VCS="). See the docstring at
+     # the top of versioneer.py for instructions on writing your setup.cfg .
+     setup_cfg = os.path.join(root, "setup.cfg")
+-    parser = configparser.SafeConfigParser()
++    parser = configparser.ConfigParser()
+     with open(setup_cfg, "r") as f:
+         parser.readfp(f)
+     VCS = parser.get("versioneer", "VCS")  # mandatory

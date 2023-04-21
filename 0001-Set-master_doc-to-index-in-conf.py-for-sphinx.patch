@@ -3,17 +3,15 @@ From: James Slagle <jslagle@redhat.com>
 Date: Mon, 13 Dec 2021 15:06:26 -0500
 Subject: [PATCH] Set master_doc to index in conf.py for sphinx
 
+Adapted by Federico Pellegrin <fede@evolware.org> for v 1.0.0
 
-diff --git a/doc/conf.py b/doc/conf.py
-index 95d8999..a28f7c2 100644
---- a/doc/conf.py
-+++ b/doc/conf.py
-@@ -121,3 +121,5 @@ html_sidebars = {
- htmlhelp_basename = 'ssh-pythondoc'
+diff -ruN a/doc/conf.py b/doc/conf.py
+--- a/doc/conf.py	2022-12-03 21:54:08.000000000 +0100
++++ b/doc/conf.py	2023-04-17 11:36:12.097624785 +0200
+@@ -124,5 +124,6 @@
  intersphinx_mapping = {'https://docs.python.org/': None}
  autoclass_content = "both"
-+
+ 
 +master_doc = "index"
--- 
-2.31.1
-
+ # A list of files that should not be packed into the epub file.
+ epub_exclude_files = ['search.html']
